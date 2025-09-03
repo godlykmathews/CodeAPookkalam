@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-a-Pookkalam Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FFC107; /* Marigold Yellow */
+            --secondary-color: #4CAF50; /* Leaf Green */
+            --accent-color: #FF5722; /* Bright Orange */
+            --background-color: #FFF8E1; /* Cream */
+            --text-color: #333;
+            --white: #fff;
+            --border-radius: 12px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        main {
+            padding-top: 2rem;
+        }
+
+        section {
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .platform-options {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #555;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌸 Code-a-Pookkalam 🌸</h1>
+        </header>
+
+        <main>
+            <section id="welcome">
+                <h2>Is it Your First Time Participating?</h2>
+                <p>If this is your first time participating in Code-a-Pookkalam, welcome! Don't worry if you're new to coding or unsure about how to create your own Pookkalam using code - we're here to help. This guide will walk you through the basics and get you started.</p>
+            </section>
+
+            <section id="platforms">
+                <h2>🎨 Use Any Language or Platform</h2>
+                <p>In Code-a-Pookkalam, you are free to use any programming language or platform that you are comfortable with to design your Pookkalam. However, if you are a beginner, we recommend starting with one of these beginner-friendly options:</p>
+                
+                <div class="platform-options">
+                    <article id="p5js">
+                        <h3>1. p5.js (JavaScript)</h3>
+                        <p>p5.js is a JavaScript library that makes it easy to create graphics and interactive visuals in your browser. It's an excellent choice for beginners.</p>
+                        <h4>Why p5.js?</h4>
+                        <ul>
+                            <li>🚀 Beginner-friendly — you can start with no coding experience.</li>
+                            <li>🌐 You can run your code directly in the browser — no need to install anything!</li>
+                            <li>📚 Tons of resources to help you along the way.</li>
+                        </ul>
+                        <h4>Getting Started with p5.js</h4>
+                        <ol>
+                            <li><strong>Visit the p5.js Website:</strong> Go to the <a href="https://p5js.org/" target="_blank">p5.js website</a> to get familiar with what it is and explore its possibilities.</li>
+                            <li><strong>Learn with Tutorials:</strong> Head over to the <a href="https://p5js.org/learn/" target="_blank">p5.js tutorials</a> to start learning the basics, like drawing shapes, adding colors, and more. 🖍️</li>
+                            <li><strong>Write Code in the Online Editor:</strong> You don't need to download any software! Just visit the <a href="https://editor.p5js.org/" target="_blank">p5.js online editor</a> and start coding right away. 💻</li>
+                        </ol>
+                        <p>Here's a simple example to get you started:</p>
+                        <pre><code>function setup() {
+  createCanvas(400, 400);
+  background(255);  // Set the background color to white
+  ellipse(200, 200, 150, 150);  // Draw a circle
+}</code></pre>
+                    </article>
+
+                    <article id="python-turtle">
+                        <h3>2. Python Turtle</h3>
+                        <p>Python Turtle is another beginner-friendly way to create graphics with code. You can use simple commands to make a virtual "turtle" move around the screen and draw shapes, making it perfect for designing pookalam patterns.</p>
+                        <h4>Why Python Turtle?</h4>
+                        <ul>
+                            <li>✨ Very simple to learn — you can start drawing with just a few lines of code.</li>
+                            <li>🎨 It's fun and visual, making it ideal for creative projects like this.</li>
+                        </ul>
+                        <h4>Getting Started with Python Turtle</h4>
+                        <ol>
+                            <li><strong>Use the Python Turtle Online Editor:</strong> No need to install Python! Just go to an <a href="https://www.online-python.com/" target="_blank">online Python editor with Turtle support</a> and start coding. 🌟</li>
+                            <li><strong>Learn the Basics with Tutorials:</strong> If you're new to Python or Turtle, check out a <a href="https://realpython.com/beginners-guide-python-turtle/" target="_blank">Python Turtle tutorial</a> to get started. 📘</li>
+                        </ol>
+                        <p>Try This Simple Code:</p>
+                        <pre><code>import turtle
+
+pookalam = turtle.Turtle()
+pookalam.circle(100)  # Draw a circle with a radius of 100 units
+turtle.done()</code></pre>
+                    </article>
+                    
+                    <article id="joy">
+                        <h3>3. Joy</h3>
+                        <p>Joy is a tiny creative coding library in Python, made by FOSS United India. See how to use Joy: <a href="https://github.com/fossunited/joy/blob/main/README.md" target="_blank">Joy on GitHub</a>.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="other-languages">
+                <h3>Other Languages</h3>
+                <p>You are free to use any language that supports graphical output, such as:</p>
+                <ul>
+                    <li>JavaScript (HTML5 Canvas)</li>
+                    <li>Java (AWT/Swing)</li>
+                    <li>C++ (Graphics libraries)</li>
+                    <li>Processing</li>
+                    <li>Or any other platform…</li>
+                </ul>
+            </section>
+
+            <section id="register">
+                <h2>How to Register on the TinkerHub App</h2>
+                <p>For first-timers, here is how you can register for the event using the TinkerHub app. It's the best way to stay updated and be part of the community!</p>
+                <ol>
+                    <li><strong>Download the App:</strong> Get the TinkerHub app from the Google Play Store or Apple App Store.</li>
+                    <li><strong>Create Your Account:</strong> Sign up with your email or social media account. If you already have an account, just log in.</li>
+                    <li><strong>Find the Event:</strong> Navigate to the 'Events' or 'Hubs' section in the app.</li>
+                    <li><strong>Search for Code-a-Pookkalam:</strong> Look for the "Code-a-Pookkalam" event and tap on it.</li>
+                    <li><strong>Register:</strong> Click the 'Register' or 'Join' button to confirm your participation.</li>
+                    <li><strong>You're All Set!</strong> Get ready to code your beautiful Pookkalam and share it with the community.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <p>Choose Your Platform and Let Your Creativity Flow! 🎨✨</p>
+            <p>Good luck, and we can't wait to see your pookalams! 🌸🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
